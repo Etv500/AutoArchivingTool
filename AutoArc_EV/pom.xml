@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.EV.AutoArc</groupId>
+  <artifactId>AutoArc_EV_v1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Auto Archiving Tool</name>
+  <description>This program allows to copy and paste folders on request or at a scheduled time. It also allows to check that all files were copied by checking the size.</description>
+
+
+
+<build>
+        <plugins>
+            <plugin>
+                <!-- Build an all inclusive Jar file for stand alone execution -->
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>Arc.RunMain</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+  
+<dependencies>
+
+   <!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.0</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.apache.directory.studio</groupId>
+    <artifactId>org.apache.commons.io</artifactId>
+    <version>2.4</version>
+</dependency>
+
+
+
+</dependencies>
+
+<properties>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+
+
+
+</project>
