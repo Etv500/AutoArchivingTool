@@ -8,3 +8,5 @@ This software allows the user to copy and paste files/folders from a path to ano
 If you want to definetly close the program please click on the button "Exit". If you click on the top-right corner for closing the window the program will be minimized to a trayicon which is ideal if you have set the tasks to be performed automatically at a specified time(e.g. if you set the archiving to run at 7pm every day you will need to keep program running in background and so you will not have to close the tryicon).
 
 You can download the project and import it as an existing Maven project or if you just want to use the program you can run the .jar simply by double clicking it. Note that you will need all the files to be in the same folder where the .jar is located as all the paths are based on the location of it. You will also need JDK installed on your machine (version 8u251)
+
+Ideas for future development includes variable time periods for automated running (currently can only set to run at specified time every 24h), improve GUI, improve user-program interaction.
