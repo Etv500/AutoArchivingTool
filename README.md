@@ -1,6 +1,6 @@
 # AutoArchivingTool
 
-I know there is a method which is kind of reundant, this was just my first full Java application I did not care about details. A Maven project including pom.xml and the executable .jar program with dependencies included. Simple software that allows the user to copy and paste folders at command or scheduling the actions 
+A Maven project including pom.xml and the executable .jar program with dependencies included. Simple software that allows the user to copy and paste folders at command or scheduling the actions 
 to run automatically at specified times.
 
 This software allows the user to copy and paste files/folders from a path to another which are contained in the Excel file named "AutoArchivingPaths_ToBeSetManually.xlsx". Please do not change name/extension of it. Simply substitute the paths in column A and C, the file is already populated with an example. Formulas can be used as the file is automatically saved using a .vbs file (avoiding the issue of using not accepted formulas that you may encounter when using XSSFFormulaEvaluator.evaluateAllFormulaCells(xssfWorkbook) or similar solutions). Destination directory will be created if missing. The software allows also to perform a check of the directories to see if everything was copied succesfully. The SizeCheck() method will compare the size of the folder/file in column A to the folder/file at path in column C, and will return the output in SizeCheckOutput.txt listing the inconsistencies.
