@@ -7,4 +7,4 @@ This software allows the user to copy and paste files/folders from a path to ano
 
 If you want to definetly close the programe please click on the button "Exit". If you click on the top-right corner for closing the window the program will be minimized to a trayicon which is ideal if you have set the tasks to be performed automatically at a specified time.
 
-You can download the project and import it as an existing Maven project or if you just want to use the program you can run the .jar simply by double clicking it. Note that you will need all the files to be in the same folder where the .jar is located as all the paths are based on the location of it.
+You can download the project and import it as an existing Maven project or if you just want to use the program you can run the .jar simply by double clicking it. Note that you will need all the files to be in the same folder where the .jar is located as all the paths are based on the location of it. You will also need JDK installed on your machine (version 8u251)
